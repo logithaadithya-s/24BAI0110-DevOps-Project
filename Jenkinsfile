@@ -11,7 +11,8 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/logithaadithya-s/24BAI0110-DevOps-Project.git'
+                git branch: 'main',
+                    url: 'https://github.com/logithaadithya-s/24BAI0110-DevOps-Project.git'
             }
         }
 
