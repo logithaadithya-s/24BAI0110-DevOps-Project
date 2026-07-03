@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT Tech Symposium 2026</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h2>VIT Tech Symposium 2026</h2>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/schedule}">Schedule</a></li>
+            <li><a th:href="@{/speakers}">Speakers</a></li>
+            <li><a th:href="@{/registration}">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <h1>Annual Technical Symposium</h1>
+
+    <p>
+        Join India's brightest innovators, developers, researchers,
+        and entrepreneurs for an exciting day of technical events,
+        coding competitions, AI workshops, and inspiring keynote talks.
+    </p>
+
+    <a th:href="@{/registration}" class="btn">
+        Register Now
+    </a>
+
+</section>
+
+<section class="about">
+
+    <h2>About The Event</h2>
+
+    <p>
+        The Annual Technical Symposium brings together students,
+        professionals, and researchers to explore the latest
+        advancements in Artificial Intelligence, Cyber Security,
+        Cloud Computing, DevOps, Robotics, IoT, and Full Stack
+        Development.
+    </p>
+
+</section>
+
+<section class="events">
+
+    <h2>Featured Events</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Hackathon</h3>
+            <p>24-hour coding competition with exciting prizes.</p>
+        </div>
+
+        <div class="card">
+            <h3>Paper Presentation</h3>
+            <p>Present your innovative research work.</p>
+        </div>
+
+        <div class="card">
+            <h3>Project Expo</h3>
+            <p>Showcase your latest software and hardware projects.</p>
+        </div>
+
+        <div class="card">
+            <h3>AI Workshop</h3>
+            <p>Hands-on session on Machine Learning and Generative AI.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="countdown">
+
+    <h2>Symposium Starts In</h2>
+
+    <div id="timer">
+        Loading...
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 VIT Technical Symposium |
+        Designed using Spring Boot
+    </p>
+
+</footer>
+
+<script th:src="@{/js/script.js}"></script>
+
+</body>
+</html>

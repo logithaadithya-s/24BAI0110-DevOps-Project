@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: event-manager
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: event-manager
+
+  template:
+    metadata:
+      labels:
+        app: event-manager
+
+    spec:
+      containers:
+      - name: event-manager
+        image: logithaadithya/event-manager:v1
+        imagePullPolicy: Always
+
+        ports:
+        - containerPort: 8080

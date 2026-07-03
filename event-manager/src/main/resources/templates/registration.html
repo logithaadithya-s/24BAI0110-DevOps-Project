@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registration</title>
+
+<link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<h2>VIT Tech Symposium 2026</h2>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a th:href="@{/}">Home</a></li>
+
+<li><a th:href="@{/schedule}">Schedule</a></li>
+
+<li><a th:href="@{/speakers}">Speakers</a></li>
+
+<li><a th:href="@{/registration}">Register</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="page-title">
+
+<h1>Register Now</h1>
+
+<p>Fill the form below to participate.</p>
+
+</section>
+
+<section class="form-section">
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="text" placeholder="College Name" required>
+
+<select>
+
+<option>Hackathon</option>
+
+<option>Paper Presentation</option>
+
+<option>AI Workshop</option>
+
+<option>Project Expo</option>
+
+</select>
+
+<button type="submit">
+
+Register
+
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 VIT Technical Symposium
+
+</p>
+
+</footer>
+
+</body>
+
+</html>

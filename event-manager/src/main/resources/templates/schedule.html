@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Schedule</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h2>VIT Tech Symposium 2026</h2>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/schedule}">Schedule</a></li>
+            <li><a th:href="@{/speakers}">Speakers</a></li>
+            <li><a th:href="@{/registration}">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Event Schedule</h1>
+    <p>Complete schedule of the Annual Technical Symposium</p>
+</section>
+
+<section class="schedule-table">
+
+<table>
+
+<thead>
+
+<tr>
+    <th>Time</th>
+    <th>Event</th>
+    <th>Venue</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+    <td>09:00 AM</td>
+    <td>Registration</td>
+    <td>Main Auditorium</td>
+</tr>
+
+<tr>
+    <td>10:00 AM</td>
+    <td>Opening Ceremony</td>
+    <td>Main Auditorium</td>
+</tr>
+
+<tr>
+    <td>11:00 AM</td>
+    <td>AI Workshop</td>
+    <td>Lab 201</td>
+</tr>
+
+<tr>
+    <td>12:30 PM</td>
+    <td>Lunch Break</td>
+    <td>Food Court</td>
+</tr>
+
+<tr>
+    <td>01:30 PM</td>
+    <td>Hackathon Begins</td>
+    <td>Innovation Lab</td>
+</tr>
+
+<tr>
+    <td>02:00 PM</td>
+    <td>Paper Presentation</td>
+    <td>Seminar Hall</td>
+</tr>
+
+<tr>
+    <td>04:30 PM</td>
+    <td>Project Expo</td>
+    <td>Expo Hall</td>
+</tr>
+
+<tr>
+    <td>06:00 PM</td>
+    <td>Prize Distribution</td>
+    <td>Main Auditorium</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 VIT Technical Symposium
+
+</p>
+
+</footer>
+
+</body>
+</html>
