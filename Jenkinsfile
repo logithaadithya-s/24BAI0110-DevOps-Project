@@ -13,5 +13,12 @@ pipeline {
                 sh 'mvn -version'
             }
         }
+        stage('Build Maven') {
+            steps {
+                dir('event-manager') {
+                    sh 'mvn clean package -DskipTests'
+                }
+        }
+}
     }
 }
