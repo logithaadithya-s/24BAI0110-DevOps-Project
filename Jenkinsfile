@@ -67,7 +67,20 @@ pipeline {
             }
 
         }
-
+        stage('Docker Login Test') {
+            steps {
+                withCredentials([usernamePassword(
+                    credentialsId: 'dockerhub',
+                    usernameVariable: 'USERNAME',
+                    passwordVariable: 'PASSWORD'
+                )]) {
+                    sh '''
+                    echo "$PASSWORD" | docker login -u "$USERNAME" --password-stdin
+                    docker info
+                    '''
+                }
+            }
+        }
         stage('Push Docker Image') {
 
             steps {
